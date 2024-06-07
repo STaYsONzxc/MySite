@@ -76,21 +76,14 @@ function createRandomCircles(rectangleElement) {
 }
 
 const rectangleElement = document.querySelector(".rectangle");
-const spotifyPlayerElement = document.querySelector(".spotifyplayer");
 const rectangle2Element = document.querySelector(".rectangle-right");
 
 createRandomCircles(rectangleElement);
-createRandomCircles(spotifyPlayerElement);
 createRandomCircles(rectangle2Element);
 
 document.addEventListener("DOMContentLoaded", function () {
   const videoFiles = [
     "media/video1.mp4",
-    "media/video2.mp4",
-    "media/video3.mp4",
-    "media/video4.mp4",
-    "media/video5.mp4",
-    "media/video6.mp4",
   ];
 
   const randomIndex = Math.floor(Math.random() * videoFiles.length);
